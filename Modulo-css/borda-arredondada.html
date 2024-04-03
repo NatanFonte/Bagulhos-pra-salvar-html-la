@@ -8,17 +8,17 @@
     <style>
         div
         {
-            width: 400px;
-            height: 100px;
+            width: 700px;
+            height: 700px;
             background: rgb(0, 0, 0);
-            border: 10px solid rgb(0, 255, 170);
-            border-radius: 50%;
+            border: 10px dotted rgb(0, 255, 170);    /*largura estilo e cor, assim se muda uma borda */
+            border-radius: 0%; /*Esse bagulho meio que muda a forma dele, tipo deixa mais arredondado ou não */
             
-            transition: all 0.5;
+            transition: all 0.5s;  /*isso ai é os segundos que duram, transição*/
         }
-        div:hover
+        div:hover /*Esse bagulho adiciona uma ação, no caso eu to escrevendo pro css no caso o "div" mudar quando eu passar o mouse*/
         {
-            border-radius: 0%;
+            border-radius: 100%; 
         }
     </style>
 </head>
