@@ -8,17 +8,58 @@
     <style>
         .container
         {
-            background: rgb(0, 38, 255);
+            background: violet;
             color: rgb(83, 7, 182);
-            position: static;
-            top: 20px;
+            margin: 40px 0;
+            position: relative;
+            height: 150px;
+        }
+        .filho-relative
+        {
+            background: red;
+            position: relative;
+            top: 10px;
             left: 20px;
+            bottom: 20px;
+            right: 50px;
+            width: 120px;
+        }
+        .filho-absolute
+        {
+            background: red;
+            position: absolute;
+            top: px;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        texto1
+            <div class="container">
+                Texto1
+            <div class="filho-relative">
+                Texto2
+        </div>
+        Texto 3
+        </div>
+        <div class="container">
+            Texto1
+        <div class="filho-absolute">
+            Texto2
     </div>
+    Texto 3
+    </div>
+    <div class="container">
+        Texto1
+    <div class="filho-relative">
+        Texto2
+</div>
+Texto 3
+</div>
+<div class="container">
+    Texto1
+<div class="filho-absolute">
+    Texto2
+</div>
+Texto 3
+</div>
 </body>
 </html>
