@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            background: violet;
+            color: rgb(83, 7, 182);
+            margin: 40px 0;
+            position: relative;
+            height: 150px;
+        }
+        .filho-relative
+        {
+            background: red;
+            position: relative;
+            top: 10px;
+            left: 20px;
+            bottom: 20px;
+            right: 50px;
+            width: 120px;
+        }
+        .filho-absolute
+        {
+            background: red;
+            position: absolute;
+            top: px;
+        }
+        .fixed
+        {
+            font-size: 30px;
+            position: fixed;
+            color: blue;
+            background: red;
+            bottom: 20px;
+            right: 30px;
+            z-index: 999;
+        }
+    </style>
+</head>
+<body>
+    <div class="fixed">
+         Texto Fixed
+    </div>
+            <div class="container">
+                Texto1
+            <div class="filho-relative">
+                Texto2
+        </div>
+        Texto 3
+        </div>
+        <div class="container">
+            Texto1
+        <div class="filho-absolute">
+            Texto2
+    </div>
+    Texto 3
+    </div>
+    <div class="container">
+        Texto1
+    <div class="filho-relative">
+        Texto2
+</div>
+Texto 3
+</div>
+<div class="container">
+    Texto1
+<div class="filho-absolute">
+    Texto2
+</div>
+Texto 3
+</div>
+<div class="container">
+    Texto1
+<div class="filho-absolute">
+    Texto2
+</div>
+Texto 3
+
+</div>
+</body>
+</html>
