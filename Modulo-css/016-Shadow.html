@@ -8,6 +8,7 @@
     <style>
         div
         {
+            position: relative;
             padding: 30px; /*Lembrando que padding define meio que o espaço em volta do texto,
              formando meio que uma caixa de texto*/
             background: pink; /*customizando o background dessa tag*/
@@ -18,7 +19,8 @@
 
         div:hover
         {
-            margin-top: 1px;
+            margin-top: 20px; /*Da aquele efeito de transição pica de descer, então sla acho que
+             isso faz ele mudar de posição pra margem*/
             text-shadow: 2px 2px 2px rgba(0,0,0,0.4); /*Shadow é uma propriedade da tag, que é no caso a tag é o div,
             o primeiro modifica o eixo X e o segundo o eixo Y, e o 3 modifica o a claridez da sombra
             (só modifica a 3 que tu entende, inclusive o nome dessas coisas "2px,1px" é parâmetro*/
