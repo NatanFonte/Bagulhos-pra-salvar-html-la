@@ -8,19 +8,23 @@
   <title>Flex-box</title>
 
   <style>
-    .flex {
-      display: flex;
-    }
+   .flex
+   {
+     display: flex;
+   }
+   .flex .item:nth-of-type(3)
+   {
+     background: purple;
+     flex-shrink: 10; /*praticamente o contrário do outro que é o grow, esse faz diminuir o filho na pagina,
+      enquanto os outros se adaptam ao seu tamanho*/
+   }
+   .flex .item:nth-of-type(6)
+   {
+     background: yellow;
+     flex-shrink: 4; /*praticamente o contrário do outro que é o grow, esse faz diminuir o filho na pagina,
+      enquanto os outros se adaptam ao seu tamanho*/
+   }
 
-    .flex .item:nth-of-type(3) {
-      background-color: purple;
-      flex-shrink: 5;
-    }
-
-    .flex .item:nth-of-type(6) {
-      background-color: rosybrown;
-      flex-shrink: 5;
-    }
   </style>
 </head>
 

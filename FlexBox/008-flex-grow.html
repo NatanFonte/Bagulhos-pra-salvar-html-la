@@ -10,15 +10,19 @@
   <style>
     .flex {
       display: flex;
-      flex-direction: row;
+      flex-direction: column; /*Lembrando que o colum transforma tudo em coluna na vertical*/
     }
 
     .flex .item {
-      flex-grow: 1;
+      flex-grow: 1; /*Esse flex grow ta sendo usado pro resto dos números, enquanto o outro flex grow abaixo ta usando o type
+      ou seja ele ta focando em apenas um dos filhos do containers*/
+      width: 100%; /*Essa coisa ta forçando eles a ocupar a pagina inteira*/
     }
 
-    .flex .item:nth-of-type(3) {
-      flex-grow: 12;
+    .flex .item:nth-of-type(3){ /*Ele consegue aumentar a largura de um dos filhos do container
+      por exemplo eu selecionei com o nth-of-type e os outros irmãos dele /1,2,4,5,6/ diminuiram com o tamanho do 3
+      então eles se adequam ao tamanho do irmão*/
+      flex-grow: 10;
     }
   </style>
 </head>
