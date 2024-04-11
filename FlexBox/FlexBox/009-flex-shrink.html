@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/style.css">
+  <title>Flex-box</title>
+
+  <style>
+   .flex
+   {
+     display: flex;
+   }
+   .flex .item:nth-of-type(3)
+   {
+     background: purple;
+     flex-shrink: 10; /*praticamente o contrário do outro que é o grow, esse faz diminuir o filho na pagina,
+      enquanto os outros se adaptam ao seu tamanho*/
+   }
+   .flex .item:nth-of-type(6)
+   {
+     background: yellow;
+     flex-shrink: 4; /*praticamente o contrário do outro que é o grow, esse faz diminuir o filho na pagina,
+      enquanto os outros se adaptam ao seu tamanho*/
+   }
+
+  </style>
+</head>
+
+<body>
+
+  <main class="flex">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item">9</div>
+    <div class="item">10</div>
+    <div class="item">11</div>
+    <div class="item">12</div>
+  </main>
+
+</body>
+
+</html>

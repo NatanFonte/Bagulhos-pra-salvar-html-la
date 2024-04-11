@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/style.css">
+  <title>Flex-box</title>
+
+  <style>
+    .flex {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline; /*nome ja é sugestivo, mas bom ele alinha os itens
+      pode centralizar meter no canto inferior esquerdo ou superior direito e etc
+      Lembrando que pra alinhar bem no centro é necessário ter o justify-content: center;
+      apenas uma não da conta então são necessária varias pra alinhar uma estrutura do jeito que você quer
+      e tem como esticar a estrutura que você ta trabalhando até o limite da pagina seja pra onde ele esteja virado, mete um stretch
+      e cabo*/
+    }
+    .flex .item:nth-of-type(2)
+    {
+      font-size: 15rem;
+    }
+    .flex .item:nth-of-type(3)
+    {
+      font-size: 28rem;
+    }
+  </style>
+</head>
+
+<body>
+
+  <main class="flex">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+  </main>
+
+</body>
+
+</html>
