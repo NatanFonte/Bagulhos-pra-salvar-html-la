@@ -1,0 +1,11 @@
+metodologias de versionamento
+software de escritorio
+fundamentos de hardware e software
+principios de ui e ux na producção de interface
+esrtruturas de dados
+principios de design
+linguagem de marcação
+pseudocódigo
+metodologias de desenvolvimento
+folha de estilo
+principios de design

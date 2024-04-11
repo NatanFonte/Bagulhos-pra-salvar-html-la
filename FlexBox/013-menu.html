@@ -8,59 +8,58 @@
   <title>Flex-box</title>
 
   <style>
-    nav {
+    nav
+    {
       display: flex;
       justify-content: space-between;
       align-items: center;
     }
-
-    nav ul {
-      font-size: 2.5rem;
-      list-style: none;
-
-      display: flex;
-      align-items: baseline;
+    nav ul
+    {
+      font-size: 2.5rem; /*coloca 15rem ae só pa ri, que tu vai ver o motivo dele ta 2.5*/
+      list-style: none; /*tira o none e você vai ver a sua funçao, ele tira os pontinhos,
+       se pa deve da pra tirar a linha embaixo usando esse comando*/
+      display: flex; /*Ele fez o HomeSobrePortfolioContato deixar de ser uma lista, apaga ele que tu vai entender o que ta rolando*/
+      margin: 0 5px;
     }
-
-    nav ul li {
-      margin: 0 10px;
+    nav ul li
+    {
+      margin: 0 10px; /*Apaga ele que tu vai entender o bagulho que ele ta fazendo, ele praticamente ta dando espaçamento pras letras,
+       claro que da pra usar outro comando mas isso a gente vê depois*/
     }
-
-    nav ul li:nth-of-type(2) {
-      order: 1;
+    nav ul li:nth-of-type(2)
+    {
+      order:1;
     }
-
-    nav ul li:nth-of-type(3) {
+    nav ul li:nth-of-type(33)
+    {
       font-size: 3.5rem;
     }
+
   </style>
 </head>
 
 <body>
+ <header class="flex">
+  <nav>
+    <img src="https://vidafullstack.com.br/wp-content/uploads/2019/08/logo-4.png" alt="">
+    <ul>
+      <li>
+        <a href="">Home</a>
+      </li>
+      <li>
+        <a href="">Sobre</a>
+      </li>
+      <li>
+        <a href="">Portfolio</a>
+      </li>
+      <li>
+        <a href="">Contato</a>
+      </li>
 
-  <header class="flex">
-    <nav>
-      <img src="https://vidafullstack.com.br/wp-content/uploads/2019/08/logo-4.png" alt="">
-      <ul>
-        <li>
-          <a href="#">Home</a>
-        </li>
-
-        <li>
-          <a href="#">Sobre</a>
-        </li>
-
-        <li>
-          <a href="#">Portfólio</a>
-        </li>
-
-        <li>
-          <a href="#">Contato</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-
+    </ul>
+  </nav>
+ </header>
 </body>
 
 </html>

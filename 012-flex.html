@@ -10,21 +10,20 @@
   <style>
     .flex {
       display: flex;
-    }
-    .flex .item
-    {
-      flex: 1 1 auto; /*Passa o mouse encima dele que tu vai entender o que é flex, lek basicamente tem 3 funções
-      passa o mouse encima que tu vai entender todas elas*/
-    }
-    .flex .item:nth-of-type(4)
-    {
-      flex: 0 1 500px;
-    }
-    .flex .item:nth-of-type(1)
-    {
-      flex: 0 8 auto;
+      flex-direction: column;
     }
 
+    .flex .item {
+      flex: 1 1 auto;
+    }
+
+    .flex .item:nth-of-type(4) {
+      flex: 0 1 500px;
+    }
+
+    .flex .item:nth-of-type(1) {
+      flex: 0 8 auto;
+    }
   </style>
 </head>
 
@@ -35,7 +34,7 @@
     <div class="item">2</div>
     <div class="item">3</div>
     <div class="item">4</div>
-
+    <div class="item">4</div>
   </main>
 
 </body>
