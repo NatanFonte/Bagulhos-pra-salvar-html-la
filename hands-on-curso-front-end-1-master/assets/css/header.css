@@ -1,0 +1,17 @@
+header section{   
+   
+    justify-content: space-between;
+    align-items: center;
+
+}
+header nav ul
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    
+}
+header nav ul li
+{
+    padding: 15px;
+}
